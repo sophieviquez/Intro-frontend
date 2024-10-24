@@ -1,5 +1,6 @@
 import React from "react";
 import Saludo from "./components/Saludo";
+import Button from "./components/Button";
 
 function App() {
   return (
@@ -19,10 +20,21 @@ function App() {
       </header>
       <main>
         {/*<Saludo hola="este es el prop hola" adios="este es el prop adios" />*/}
-        <Saludo firstName="Ana" />
-        <Saludo firstName="Sophia" />
-        <Saludo firstName="Frida" />
-        <Saludo firstName="Yun" />
+        {/* <Button content="Registrarse" />
+        <Button content="Iniciar Sesion" /> */}
+
+        <Button>Iniciar Sesion</Button>
+        <Button>Registrate</Button>
+        <Button>
+          <code>Log in</code>
+          <span> Hola!</span>
+        </Button>
+
+        <Saludo firstName="Ana" lastName="Acosta" />
+        <Saludo />
+        <Saludo firstName="Sophia" lastName="Viquez" />
+        <Saludo firstName="Frida" lastName="Hernandez" />
+        <Saludo firstName="Yun" lastName="Alcantar" />
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
